@@ -31,7 +31,7 @@ namespace DSA.Stack
                     stk.Pop();
                 }
                 int ans = stk.Count == 0 ? i : i - stk.Peek().index;
-                stk.Push((price, i));
+                stk.Push((price, i)); 
                 return ans;
             }
         }
