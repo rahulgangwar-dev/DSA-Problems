@@ -11,6 +11,7 @@ namespace DSA.Problems.LinkedList
             TestDeleteMethods();
             TestEdgeCases();
             TestAdvanced();
+            TestNewProblems();
         }
 
         static void TestAddMethods()
@@ -106,6 +107,51 @@ namespace DSA.Problems.LinkedList
             while (last!.Next != null) last = last.Next;
             last.Next = second;
             Console.WriteLine($"HasCycle (cycle):    {cyc.HasCycle()}");      // True
+            Console.WriteLine();
+        }
+
+        static SinglyLinkedList Build(params int[] values)
+        {
+            var l = new SinglyLinkedList();
+            foreach (var v in values) l.AddLast(v);
+            return l;
+        }
+
+        static void TestNewProblems()
+        {
+            Console.WriteLine("═══════ NEW PROBLEMS ═══════");
+
+            var rr = Build(1, 2, 3, 4, 5);
+            rr.ReverseRecursive();
+            Console.Write("ReverseRecursive:   "); rr.Print();   // 5 -> 4 -> 3 -> 2 -> 1 -> null
+
+            var nth = Build(1, 2, 3, 4, 5);
+            Console.WriteLine($"NthFromEnd(2):      {nth.NthFromEnd(2)?.Data}");        // 4
+            Console.WriteLine($"NthFromEndCount(2): {nth.NthFromEndCount(2)?.Data}");   // 4
+
+            var rm = Build(1, 2, 3, 4, 5);
+            rm.RemoveNthFromEnd(2);
+            Console.Write("RemoveNthFromEnd(2):"); rm.Print();   // 1 -> 2 -> 3 -> 5 -> null
+            var rmHead = Build(1, 2, 3, 4, 5);
+            rmHead.RemoveNthFromEnd(5);
+            Console.Write("RemoveNthFromEnd(5):"); rmHead.Print();   // 2 -> 3 -> 4 -> 5 -> null (head case)
+
+            Console.WriteLine($"IsPalindrome 1,2,2,1: {Build(1, 2, 2, 1).IsPalindrome()}");   // True
+            Console.WriteLine($"IsPalindrome 1,2,3:   {Build(1, 2, 3).IsPalindrome()}");      // False
+
+            var kg = Build(1, 2, 3, 4, 5);
+            kg.ReverseinKGroups(2);
+            Console.Write("ReverseinKGroups(2):"); kg.Print();   // 2 -> 1 -> 4 -> 3 -> 5 -> null
+
+            var ro = Build(1, 2, 3, 4, 5);   // odd length only — even length pe infinite loop (see ReorderList.cs)
+            ro.ReorderListBrute();
+            Console.Write("ReorderListBrute:   "); ro.Print();   // 1 -> 5 -> 2 -> 4 -> 3 -> null
+
+            var a = Build(2, 4, 3);
+            var b = Build(5, 6, 4);
+            var sum = new SinglyLinkedList();
+            sum.AddTwoNumbers(a.Head, b.Head);
+            Console.Write("AddTwoNumbers:      "); sum.Print();   // 7 -> 0 -> 8 -> null
             Console.WriteLine();
         }
     }
