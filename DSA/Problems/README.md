@@ -13,8 +13,9 @@ Isi order mein practice/revise karo. Har folder ek pattern hai.
 | 7 | `07_StackAndMonotonicStack` | Stack, monotonic stack | 7 |
 | 8 | `08_Queue` | Queue, circular queue | 3 |
 | 9 | `09_GreedyAndDaily` | Greedy, simulation, misc daily problems | 6 |
+| 10 | `10_LinkedList` | Singly linked list (partial class, ek problem = ek file) | 12 |
 
-**Total: 51 problems**
+**Total: 63 problems**
 
 ## ⚠️ Issues found while reorganizing (unfixed, flagged only)
 
@@ -41,6 +42,15 @@ Isi order mein practice/revise karo. Har folder ek pattern hai.
 3. **`02_HashingAndCounting/LongestConsecutiveSequence.cs`** — the code itself is
    correct, but its header comment ("Output: true") is stale/copy-pasted from a
    different problem. Not a functional bug, just a misleading comment.
+
+4. **`10_LinkedList/ReorderList.cs`** — both attempts are unfinished (copied as-is from
+   `LinkedList1.cs`). `ReorderList()` is broken; `ReorderListBrute()` (was `ReorderListBrote`)
+   works for odd length only and loops forever on even length (e.g. 1,2,3,4). Optimal
+   approach (middle -> reverse 2nd half -> merge) still to be written.
+
+5. **`10_LinkedList/MergeKSortedLists.cs`** — work in progress: ignores its `lists`
+   parameter, uses hardcoded nodes, and only merges 2 lists. Compiles, but isn't a real
+   Merge k Lists solution yet.
 
 ## Not moved
 
