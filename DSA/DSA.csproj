@@ -52,9 +52,56 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Problems\BomberMan.cs" />
-    <Compile Include="Problems\minimumBribes.cs" />
-    <Compile Include="Problems\sumXorr.cs" />
+    <Compile Include="Problems\01_ArrayBasics\FindMaximumElement.cs" />
+    <Compile Include="Problems\01_ArrayBasics\FindMissingNumber.cs" />
+    <Compile Include="Problems\01_ArrayBasics\LeftRotateArraybyNPosition.cs" />
+    <Compile Include="Problems\01_ArrayBasics\MaximumConsecutiveOnes.cs" />
+    <Compile Include="Problems\01_ArrayBasics\MergeTwoSortedArrays.cs" />
+    <Compile Include="Problems\01_ArrayBasics\MoveZeroestoEnd.cs" />
+    <Compile Include="Problems\01_ArrayBasics\RemoveDuplicateFromSortedArray.cs" />
+    <Compile Include="Problems\01_ArrayBasics\ReverseAnArray.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\ContainsDuplicate_Attempt1_MISLABELED.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\ContainsDuplicate_Attempt2_MISLABELED.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\GroupAnagram.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\LongestConsecutiveSequence.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\TopKFrequentElements.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\TwoSum.cs" />
+    <Compile Include="Problems\02_HashingAndCounting\ValidAnagram.cs" />
+    <Compile Include="Problems\03_PrefixSuffixKadane\BestTimetoBuyandSellStock.cs" />
+    <Compile Include="Problems\03_PrefixSuffixKadane\LargestSumContiguousSubarray.cs" />
+    <Compile Include="Problems\03_PrefixSuffixKadane\LongestSubarrayWithGivenSumK.cs" />
+    <Compile Include="Problems\03_PrefixSuffixKadane\ProductofArrayExceptSelf.cs" />
+    <Compile Include="Problems\04_SlidingWindowTwoPointer\3Sum_Attempt1_Brute.cs" />
+    <Compile Include="Problems\04_SlidingWindowTwoPointer\3Sum_Attempt2_Optimal.cs" />
+    <Compile Include="Problems\04_SlidingWindowTwoPointer\LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\FindFirstAndLastPosition_Attempt1.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\FindFirstAndLastPosition_Attempt2.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\FindMinimuminRotatedSortedArray.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\FindPeakElement.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\Searcha2DMatrix.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\SearchinNearlySortedArray.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\SearchinRotatedSortedArray.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\SingleElementinaSortedArray.cs" />
+    <Compile Include="Problems\05_BinarySearchBasic\SquareRoot.cs" />
+    <Compile Include="Problems\06_BinarySearchOnAnswer\AggressiveCows.cs" />
+    <Compile Include="Problems\06_BinarySearchOnAnswer\CapacityToShipPackagesWithinDDays.cs" />
+    <Compile Include="Problems\06_BinarySearchOnAnswer\KokoEatingBanana.cs" />
+    <Compile Include="Problems\06_BinarySearchOnAnswer\MedianofTwoSortedArrays.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\AsteroidCollisions.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\DailyTemperature.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\ImplementQueueusingStacks.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\ImplementStackusingQueues.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\LargestRectangleinHistogram.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\NextGreaterElementI.cs" />
+    <Compile Include="Problems\07_StackAndMonotonicStack\StockSpanner.cs" />
+    <Compile Include="Problems\08_Queue\MyCircularDeque.cs" />
+    <Compile Include="Problems\08_Queue\RecentCounter.cs" />
+    <Compile Include="Problems\09_GreedyAndDaily\AsteroidsDestroyed.cs" />
+    <Compile Include="Problems\09_GreedyAndDaily\BomberMan.cs" />
+    <Compile Include="Problems\09_GreedyAndDaily\ConcatenateNonZeroDigitsandMultiplybySumI.cs" />
+    <Compile Include="Problems\09_GreedyAndDaily\WeightedWordMapping.cs" />
+    <Compile Include="Problems\09_GreedyAndDaily\minimumBribes.cs" />
+    <Compile Include="Problems\09_GreedyAndDaily\sumXorr.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="counterGameProblem.cs" />
@@ -62,6 +109,7 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="Problems\08_Queue\MyCircularQueue_CONTENT-MISMATCH-DO-NOT-COMPILE.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
